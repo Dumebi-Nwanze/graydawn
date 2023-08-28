@@ -1,0 +1,279 @@
+.hero-section {
+  background-image: url(/earth_2.jpeg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  filter: grayscale(100%);
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.planet {
+  background: transparent;
+  border: 1px solid white;
+  animation: animate 35s linear infinite;
+}
+
+.star {
+  background: white;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.planet1 {
+  width: 500px;
+  height: 500px;
+}
+.planet2 {
+  width: 650px;
+  height: 650px;
+}
+.planet3 {
+  width: 800px;
+  height: 800px;
+}
+.planet4 {
+  width: 1100px;
+  height: 1100px;
+}
+
+span::before,
+span::after {
+  content: "";
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+
+.planet1::before {
+  width: 20px;
+  height: 20px;
+  bottom: 120px;
+  left: 20px;
+  background-color: white;
+}
+
+.planet2::before {
+  width: 20px;
+  height: 20px;
+  top: 130px;
+  right: 47px;
+  background: white;
+}
+
+.planet3::before {
+  width: 50px;
+  height: 50px;
+  bottom: 105px;
+  left: 80px;
+  background: white;
+}
+
+.planet4::before {
+  width: 20px;
+  height: 20px;
+  top: 300px;
+  right: 45px;
+  background: white;
+}
+
+.planet4::after {
+  width: 60px;
+  height: 60px;
+  top: 280px;
+  right: 25px;
+  background: transparent;
+  border: 1px solid white;
+}
+
+.star1 {
+  bottom: 120px;
+  left: 20px;
+}
+.star2 {
+  bottom: 170px;
+  left: 200px;
+}
+.star3 {
+  top: 120px;
+  right: 13%;
+}
+.star4 {
+  bottom: 8%;
+  left: 9%;
+}
+.star5 {
+  top: 10%;
+  left: 8%;
+}
+.star6 {
+  bottom: 20%;
+  right: 8%;
+}
+.star7 {
+  bottom: 12%;
+  right: 15%;
+}
+.star8 {
+  bottom: 45%;
+  right: 7%;
+}
+.star9 {
+  bottom: 52%;
+  left: 5%;
+}
+.star10 {
+  top: 100px;
+  right: 20px;
+}
+.star11 {
+  top: 33%;
+  left: 24%;
+}
+
+.star12 {
+  top: 22%;
+  left: 9%;
+  width: 5px;
+  height: 5px;
+}
+
+.star13 {
+  bottom: 11%;
+  left: 7%;
+  width: 5px;
+  height: 5px;
+}
+
+.star14 {
+  top: 20%;
+  right: 9%;
+  width: 5px;
+  height: 5px;
+}
+
+.star15 {
+  bottom: 22%;
+  right: 11%;
+  width: 5px;
+  height: 5px;
+}
+
+.star16 {
+  top: 9%;
+  right: 24%;
+  width: 5px;
+  height: 5px;
+}
+
+.star17 {
+  top: 20%;
+  left: 4%;
+  width: 5px;
+  height: 5px;
+}
+
+.links {
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+.links::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+}
+
+.btn-black {
+  background-color: black;
+  transition: 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+  z-index: 10;
+}
+.btn-black::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  transition: all 0.35s;
+  z-index: -10;
+}
+
+.btn-black:hover::after {
+  width: 100%;
+}
+
+.btn-black:hover {
+  color: black;
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.hamburger-menu {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.hamburger-menu.active .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-15px, 6px);
+}
+
+.hamburger-menu.active .line:nth-child(2) {
+  transform: rotate(45deg) translate(1px, 10px);
+}
+
+.close {
+  transform: translateY(-100%);
+}
+
+.show {
+  transform: translateY(0%);
+}
