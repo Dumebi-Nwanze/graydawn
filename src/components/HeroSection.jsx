@@ -5,7 +5,7 @@ function HeroSection() {
   return (
     <div
       id="hero"
-      className="flex flex-col h-screen snap-start hero-section text-white relative overflow-hidden lg:overflow-visible"
+      className="flex flex-col h-screen snap-start hero-section text-white relative overflow-hidden "
     >
       <NavBar />
       <SolarSystem />
