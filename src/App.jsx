@@ -29,10 +29,10 @@ function App() {
                 }
               }}
               id="rocket"
-              className="fixed p-4 rounded-full bg-blue-900 bottom-10 right-10 z-40 cursor-pointer hover:bg-blue-700 transition-colors"
+              className="fixed p-4 rounded-full bg-blue-900 bottom-[5%] right-[10%] z-40 cursor-pointer hover:bg-blue-700 transition-colors"
             >
               <img
-                className="h-4 lg:h-10"
+                className="h-5 lg:h-10"
                 src="https://firebasestorage.googleapis.com/v0/b/linkedin-clone-4baf1.appspot.com/o/rocket.png?alt=media&token=511d31c9-1ced-40d9-9e12-81e0eea8cabc"
                 alt="rocket"
               />

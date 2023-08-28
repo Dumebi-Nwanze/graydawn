@@ -8,12 +8,12 @@ function Contacts() {
         formState: { errors },
     } = useForm();
     const onSubmit: SubmitHandler<any> = (formData) => {
-        window.location.href = `mailto:davisnwanze7@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+        window.location.href = `mailto:graydawn@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
     };
     return (
         <div
             id='contact'
-            className="h-screen snap-start p-8 flex flex-col  justify-center bg-black text-white relative overflow-hidden">
+            className="h-screen snap-start px-4 pt-4 lg:px-8 lg:bt-8 pb-16  flex flex-col  justify-center bg-black text-white relative overflow-hidden">
             <SolarSystem />
             <div className='text-center'>
                 <h2 className="text-4xl mb-4 underline">Contact Us</h2>

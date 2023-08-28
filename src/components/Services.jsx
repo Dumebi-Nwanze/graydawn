@@ -5,7 +5,7 @@ function Services() {
   return (
     <div
       id="services"
-      className="min-h-screen snap-start px-8 pt-8 pb-16 bg-black text-white"
+      className="min-h-screen snap-start px-4 pt-4 lg:px-8 lg:bt-8 pb-16  bg-black text-white"
     >
       <div>
         <h2 className="text-4xl mb-4 underline">Our Services</h2>

@@ -6,7 +6,7 @@ function AboutUs() {
     return (
         <div
             id='about'
-            className="min-h-screen flex flex-col space-y-10 px-8 pt-8 pb-16 snap-start text-white bg-black">
+            className="min-h-screen flex flex-col space-y-10 px-4 pt-4 lg:px-8 lg:bt-8 pb-16 snap-start text-white bg-black">
             <div>
                 <h2 className="text-4xl mb-4 underline">About Us</h2>
                 <p className='text-lg'>
