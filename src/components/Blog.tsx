@@ -27,11 +27,11 @@ function Blog() {
     return (
         <div
             id='blog'
-            className="min-h-screen snap-start p-8 flex flex-col bg-black text-white">
+            className="min-h-screen snap-start p-4 lg:p-8 flex flex-col bg-black text-white">
             <div>
                 <h2 className="text-4xl underline mb-4">Blog</h2>
             </div>
-            <div className="flex-1 flex flex-col  p-12 bg-slate-900">
+            <div className="flex-1 flex flex-col p-4 lg:p-12 bg-slate-900">
                 <div className="flex justify-between mb-2">
                     <h4 className=' text-xl'>Featured Posts</h4>
                     <div className='font-extrabold'>
@@ -63,13 +63,13 @@ function Blog() {
                                 onClick={() => { window.location.href = "https://techcrunch.com/2023/08/28/devolut-e-commerce-latin-america-returns/" }}
                                 className="  w-full flex-shrink-0 h-[500px] relative overflow-hidden " >
 
-                                <div className='cursor-pointer pb-12 pl-12 flex flex-col justify-end w-full h-full bg-gradient-to-r from-black to-transparent absolute top-0 left-0 '>
+                                <div className='cursor-pointer pb-4 pl-4 lg:pb-12 lg:pl-12 flex flex-col justify-end w-full h-full bg-gradient-to-r from-black to-transparent absolute top-0 left-0 '>
 
-                                    <div className='w-[50%]'>
-                                        <h1 className='font-bold text-3xl mb-8'>
+                                    <div className='lg:w-[50%]'>
+                                        <h1 className='font-medium lg:font-bold text-lg lg:text-3xl mb-4 lg:mb-8'>
                                             Devolut leverages e-commerce growth in Latin America to develop reverse logistics tool
                                         </h1>
-                                        <p>
+                                        <p className='font-light lg:font-normal text-sm lg:text-base'>
                                             Devolut enables merchants a returns option that doesn’t require boxes or labels. It also provides a network of “city points” where consumers can go to return merchandise.
                                         </p>
                                     </div>

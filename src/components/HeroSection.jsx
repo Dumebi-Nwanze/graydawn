@@ -10,7 +10,7 @@ function HeroSection() {
       <NavBar />
       <SolarSystem />
       <div className="flex-1 flex flex-col justify-center items-center space-y-10 ">
-        <h1 className="text-6xl lg:text-[6rem] font-bold shadow-2xl font-orbitron">
+        <h1 className="text-5xl lg:text-[6rem] font-bold shadow-2xl font-orbitron">
           Graydawn
         </h1>
         <div>
